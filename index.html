@@ -23,6 +23,15 @@
      body>header i {
       font-size: 3rem;
     }
+
+    /* Em telas "md" (middle) */
+    @media screen and (min-width: 768px) {
+      body>main>aside {
+        min-width: 250px;
+        max-width: 250px;
+      }
+    }
+
   </style>
 </head>
 
@@ -82,12 +91,86 @@
     </div>
   </nav>
 
+   <!--
+  Usando a técnica Jumbotron
+  Referências: https://www.w3schools.com/bootstrap5/bootstrap_jumbotron.php
+  -->
+
   <header class="bg-success text-white rounded" style="margin-top: 4rem;">
-    <div class="container p-3 rounded">
-      <h1 class=" d-flex align-items-center gap-3 text-center"><i class="bi bi-leaf"></i>Strapinho</h1>
+    <div class="container p-3">
+      <h1 class=" d-flex align-items-center gap-3 justify-content-center">
+        <i class="bi bi-leaf"></i>Strapinho</h1>
     </div>
   </header>
 
+ <main class="container d-md-flex">
+    <section class="bg-light p-3 flex-grow-1">
+
+      <!-- 
+        Exemplo de conteúdo desta página.
+        No futuro, virá do back-end.
+      -->
+
+      <h2>Página inicial</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti sed obcaecati aliquam eveniet illum iusto
+        porro dolor itaque eum et quibusdam ipsa alias architecto tenetur, aperiam, inventore aliquid, earum iure?</p>
+
+    </section>
+    <aside class="p-3 bg-dark-subtle flex-shrink-0">
+
+      <!-- 
+        Exemplo de conteúdo desta página.
+        No futuro, virá do back-end.
+      -->
+
+      <h3>Mais coisas</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolorum, aliquid facere accusamus enim eaque
+        soluta dolores.</p>
+    </aside>
+  </main>
+
+  <footer class="bg-success text-light">
+
+    <footer class="container ">
+      <div class="footer-top row">
+        <div class="col-6">
+          <h4>Redes Sociais</h4>
+         <nav class="d-flex flex-column">
+            <a href="#" target="_blank">Link 1</a>
+            <a href="#" target="_blank">Link 2</a>
+            <a href="#" target="_blank">Link 3</a>
+            <a href="#" target="_blank">Link 4</a>
+          </nav>
+        </div>
+
+        <div class="d-none">
+          <h4>Parceiros</h4>
+         <nav class="d-flex flex-column">
+            <a href="#" target="_blank">Link 1</a>
+            <a href="#" target="_blank">Link 2</a>
+            <a href="#" target="_blank">Link 3</a>
+            <a href="#" target="_blank">Link 4</a>
+          </nav>
+        </div>
+
+        <div class="cl-6">
+          <h4>Acesso rápido</h4>
+          <nav class="d-flex flex-column">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+          </nav>
+        </div>
+
+        <div class="footer-botton">
+        <a href="index.html"><i class="bi bi-house-door-fill"></i></a>
+        <div>&copy; 2026 Strapinho</div>
+        <a href="#top"><i class="bi bi-arrow-up-square-fill"></i></a>
+      </div>
+    </div>
+
+  </footer>
 
   <!-- 
         Bootstrap5: Importa o componente JavaScript da CDN.
